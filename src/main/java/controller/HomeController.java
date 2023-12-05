@@ -36,7 +36,6 @@ import javafx.stage.Stage;
  */
 public class HomeController implements Initializable {
 
-    static String srch = "";
     boolean update = false;
     Story updt = new Story();
 
@@ -54,7 +53,6 @@ public class HomeController implements Initializable {
     private Label lblEntry;
     @FXML
     private Button btnAdd;
-    private TextField txtSrch;
     @FXML
     private Button btnUpdate;
 
@@ -143,12 +141,11 @@ public class HomeController implements Initializable {
         tableView.setDisable(b);
         btnBack.setDisable(b);
         lblEntry.setText("Update Entry");
-        txtSrch.setDisable(b);
         btnUpdate.setDisable(b);
     }
 
     private void fillTable() {
-        LinkedList<Story> res = StoryDAO.search(srch, MainController.user);
+        LinkedList<Story> res = StoryDAO.getAll(MainController.user);
         
         tableView.getColumns().clear();
         tableView.getItems().clear();
@@ -184,7 +181,6 @@ public class HomeController implements Initializable {
     }
 
     private void keyRelelease(KeyEvent event) {
-        srch = txtSrch.getText();
         fillTable();
     }
 

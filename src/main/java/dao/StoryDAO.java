@@ -60,17 +60,14 @@ public class StoryDAO extends BaseDAO {
         }
     }
 
-    public static LinkedList<Story> search(String srch, User u) {
+    public static LinkedList<Story> getAll(User u) {
         LinkedList<Story> res = new LinkedList<>();
         try {
             con = getCon();
             String query = "select * from stories "
-                    + "where sdate = '%s' or descrip like '%s' or uid = '%s'";
+                    + "where uid = '%s'";
 
-            query = String.format(query, 
-                    srch,
-                    srch,
-                    u.getUid().toString());
+            query = String.format(query, u.getUid().toString());
             st = con.prepareStatement(query);
             ResultSet rs = st.executeQuery();
             while (rs.next()) {

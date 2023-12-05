@@ -1,13 +1,8 @@
 main\OnlineDiary.class
-controller\HomeController.class
-utils\MyUtils$4.class
-dao\StoryDAO.class
-utils\MyUtils.class
-dao\BaseDAO.class
-utils\MyUtils$1.class
-controller\MainController.class
 model\Story.class
-utils\MyUtils$2.class
+controller\HomeController.class
+dao\StoryDAO.class
 dao\UserDAO.class
+dao\BaseDAO.class
 model\User.class
-utils\MyUtils$3.class
+controller\MainController.class

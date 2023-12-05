@@ -1,9 +1,8 @@
-D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\mavenproject1\src\main\java\model\User.java
-D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\mavenproject1\src\main\java\controller\HomeController.java
-D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\mavenproject1\src\main\java\model\Story.java
-D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\mavenproject1\src\main\java\dao\StoryDAO.java
-D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\mavenproject1\src\main\java\utils\MyUtils.java
-D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\mavenproject1\src\main\java\dao\BaseDAO.java
-D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\mavenproject1\src\main\java\main\OnlineDiary.java
-D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\mavenproject1\src\main\java\dao\UserDAO.java
-D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\mavenproject1\src\main\java\controller\MainController.java
+D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\OnlineDiary\src\main\java\dao\BaseDAO.java
+D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\OnlineDiary\src\main\java\dao\StoryDAO.java
+D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\OnlineDiary\src\main\java\controller\HomeController.java
+D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\OnlineDiary\src\main\java\main\OnlineDiary.java
+D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\OnlineDiary\src\main\java\model\User.java
+D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\OnlineDiary\src\main\java\controller\MainController.java
+D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\OnlineDiary\src\main\java\dao\UserDAO.java
+D:\Materi Kuliah\Ganjil 2023-2024\PBO\Modul\OnlineDiary\src\main\java\model\Story.java
