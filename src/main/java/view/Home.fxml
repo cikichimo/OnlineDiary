@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1075.0" style="-fx-background-color: #F88379;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <DatePicker fx:id="dtDate" layoutX="294.0" layoutY="171.0" promptText="Specify Story Date" />
+      <Button fx:id="btnAdd" defaultButton="true" layoutX="812.0" layoutY="171.0" mnemonicParsing="false" onAction="#handleButtonEvent" prefHeight="26.0" prefWidth="105.0" />
+      <TableView fx:id="tableView" layoutX="50.0" layoutY="287.0" onMouseClicked="#mouseClick" prefHeight="270.0" prefWidth="839.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnUpdate" layoutX="908.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleButtonEvent" prefHeight="26.0" prefWidth="105.0" text="UPDATE" />
+      <Button fx:id="btnDelete" layoutX="908.0" layoutY="439.0" mnemonicParsing="false" onAction="#handleButtonEvent" prefHeight="26.0" prefWidth="105.0" text="DELETE" />
+      <Button fx:id="btnBack" cancelButton="true" layoutX="26.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonEvent" text="BACK" />
+      <Label layoutX="355.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="363.0" text="My Stories" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="58.0" />
+         </font>
+      </Label>
+      <Separator layoutX="1.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="1071.0" />
+      <Label fx:id="lblEntry" layoutX="114.0" layoutY="166.0" prefHeight="30.0" prefWidth="182.0" text="Tell new story:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="1.0" layoutY="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="1071.0" />
+      <TextArea fx:id="txtDescription" layoutX="485.0" layoutY="128.0" prefHeight="120.0" prefWidth="306.0" promptText="Enter your story here..." />
+   </children>
+</AnchorPane>
