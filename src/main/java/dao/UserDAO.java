@@ -22,11 +22,12 @@ public class UserDAO {
         User u = null;
         try {
             con = getCon();
-            String query = "select uid from users where uname = '%s' and pass = '%s' ";
-            query = String.format(query,
-                    name,
-                    passwd);
+            String query = "select uid from users where uname = ? and pass = ?";
             st = con.prepareStatement(query);
+            
+            st.setString(1, name);
+            st.setString(2, passwd);
+            
             ResultSet rs = st.executeQuery();
             if (rs.next()) {
                 u = new User(UUID.fromString(rs.getString("uid")), name, passwd);
@@ -43,10 +44,11 @@ public class UserDAO {
         User u = null;
         try {
             con = getCon();
-            String query = "select * from users where uid = '%s'";
-            query = String.format(query, uid);
+            String query = "select * from users where uid = ?";
 
             st = con.prepareStatement(query);
+            st.setString(1, uid);
+            
             ResultSet rsUser = st.executeQuery();
             u = new User(UUID.fromString(rsUser.getString("uid")),
                     rsUser.getString("uname"), rsUser.getString("pass"));
@@ -63,12 +65,13 @@ public class UserDAO {
         try {
             con = getCon();
             String query = "insert into users"
-                    + " values ('%s', '%s', '%s') ";
-            query = String.format(query,
-                    u.getUid(),
-                    u.getUname(),
-                    u.getPass());
+                    + " values (?,?,?) ";
             st = con.prepareStatement(query);
+            
+            st.setString(1, u.getUid().toString());
+            st.setString(2, u.getUname());
+            st.setString(3, u.getPass());
+            
             st.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
